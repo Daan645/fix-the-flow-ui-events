@@ -47,7 +47,20 @@ doubleclickCheck.addEventListener('dblclick', function (){
   console.log('doubleclick');
 });
 
-
+// grow function
+// selecteer het element mouseoverGrow
+let mouseoverGrow = document.querySelector('#mouseoverGrow');
+// voer de functie uit warneer er over het a element wordt gehoverd
+mouseoverGrow.addEventListener('mouseover', function (){
+   // voeg grow selector toe die de animatie triggerd vanuit de css
+   mouseoverGrow.classList.add('grow'); 
+   console.log('hovered');
+});
+// wanneer er geanimeerd is voer deze functie uit
+mouseoverGrow.addEventListener('animationend', function () {
+    // Verwijder de 'grow'-klasse wanneer de animatie eindigt
+    mouseoverGrow.classList.remove('grow'); 
+});
 
 
 
