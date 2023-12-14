@@ -22,6 +22,30 @@ plusOne.addEventListener('click', function () {
   console.log(cijfer);
 });
 
+// doubleclickcheck function
+// click
+// selecteer het element doucleclickCheck
+let doubleclickCheck = document.querySelector('#doubleclickCheck');
+//voeg een event listener toe die een functie activeert wanneer er wordt geklikt
+doubleclickCheck.addEventListener('click', function (){
+  // verander de tekst van het element met id doubleclickCheck naar je moet 2 keer klikken!
+  doubleclickCheck.innerText = "Je moet 2 keer klikken!"
+  // Verander de achtergrond kleur naar rood
+  document.getElementById('doubleclickCheck').style.cssText = 'background-color: red';
+  // laat de tekst single click zien als er een keer op het a element is geklikt
+  console.log('single click');
+});
+
+// dubbelklik
+//voeg een event listener toe die een functie activeert wanneer er wordt gedubbelklikt
+doubleclickCheck.addEventListener('dblclick', function (){
+  // verander de tekst van het element met id doubleclickCheck naar goedzo! als er gedubbeklikt wordt
+ doubleclickCheck.innerText = "Goedzo!"
+  // Verander de achtergrond kleur naar rood
+    document.getElementById('doubleclickCheck').style.cssText = 'background-color: green';
+  // laat de tekst single click zien als er een keer op het a element is geklikt
+  console.log('doubleclick');
+});
 
 
 
