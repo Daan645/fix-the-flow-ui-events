@@ -62,6 +62,23 @@ mouseoverGrow.addEventListener('animationend', function () {
     mouseoverGrow.classList.remove('grow'); 
 });
 
+// down function
+// selecteer het element met id down
+let down = document.querySelector('#down');
+// voeg een eventlistener toe en voer checkeypressed uit wanner down key is gedrukt staat standaard op false
+document.addEventListener("keydown", checkKeyPressed, false);
+// functie checkkeypressed
+function checkKeyPressed(e) {
+    // als de keycode gelijkstaat aan 40 (code voor down key) voor dan onderstaand uit
+    if (e.keyCode === 40) {
+        // koppel de class down aan het element down en toggle deze (zet aan)
+        down.classList.toggle('down');
+        // laat in het console een bericht zien als de down key is ingedrukt
+        console.log('im pressed');
+    }
+}
+
+
 
 
 

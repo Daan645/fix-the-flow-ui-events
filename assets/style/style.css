@@ -83,6 +83,7 @@ a:nth-of-type(12) {
 /*animation class*/
 .grow {
   animation: grow 1s ease-in-out;
+  animation-timing-function: linear;
 }
 
 
@@ -91,6 +92,7 @@ a:nth-of-type(12) {
   0% {
     transform: scale(1);
   }
+
     25%{
     transform: scale(1.25);
   }
@@ -103,7 +105,31 @@ a:nth-of-type(12) {
   100%{
     transform: scale(2);
   }
+}
 
+/*downposition*/
 
+.down{
+  /*shorthand voor animatie naam, duration, en mode*/
+  animation: down 1s ease-in-out;
+  /*animatie curve hierdoor verloopt hij smooth*/
+  animation-timing-function: linear;
+}
 
+@keyframes down {
+  /*transforms die translate y hebben dat zorgt ervoor dat ze bewegen op de y as*/
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    translateY(1em);
+  }
+
+  50%{
+    transform: translateY(2em);
+  }
+
+  100%{
+    transform: translateY(4em);
+  }
 }
