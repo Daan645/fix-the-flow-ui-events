@@ -133,3 +133,44 @@ a:nth-of-type(12) {
     transform: translateY(4em);
   }
 }
+
+/*zigzag*/
+
+.zigzag{
+  /*shorthand voor animatie naam, duration, en mode*/
+  animation: zigzag 5s ease-in-out;
+  /*animatie curve hierdoor verloopt hij smooth*/
+  animation-timing-function: linear;
+}
+
+@keyframes zigzag {
+  /*transforms die translate y hebben dat zorgt ervoor dat ze bewegen op de y as* en de x op de x as/*/
+
+0% {
+  transform: translateY(0) translateX(0);
+}
+
+  15%{
+    transform: translateX(3em) translateY(2em);
+  }
+
+  30%{
+    transform: translateX(-4em) translateY(1em);
+  }
+
+  45%{
+    transform: translateX(-1em) translateY(-2em);
+  }
+
+  65%{
+    transform: translateX(-4em) translateY(-3em)
+  }
+
+  80%{
+    transform: translateX(5em) translateY(3em)
+  }
+
+  100%{
+      transform: translateX(2em) translateY(4em)
+  }
+}

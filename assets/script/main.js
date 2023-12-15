@@ -78,6 +78,15 @@ function checkKeyPressed(e) {
     }
 }
 
+// zigzag function
+// selecteer het element met id zigzag
+let zigzag = document.querySelector('#zigzag');
+// voeg een eventlistener toe op het element met id zigzag die een functie uitvoerd wanner er is geklikt
+zigzag.addEventListener('click', function () {
+    // Toggle (voer uit) de class zigzag (mijn animatie)
+    zigzag.classList.toggle('zigzag');
+});
+
 
 
 
