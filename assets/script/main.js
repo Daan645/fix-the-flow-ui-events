@@ -85,7 +85,33 @@ let zigzag = document.querySelector('#zigzag');
 zigzag.addEventListener('click', function () {
     // Toggle (voer uit) de class zigzag (mijn animatie)
     zigzag.classList.toggle('zigzag');
+    // zeg wanner je geklikt bent
+    console.log("clicked");
 });
+
+// dissapear function
+// selecteer het element met id dissapear
+let dissapear = document.querySelector('#dissapear');
+// voeg een eventlistener toe op het element met id dissapear die een functie uitvoert wanner er is geklikt
+dissapear.addEventListener('mouseover', function () {
+    // Toggle (voer uit) de class dissapear (mijn animatie)
+    dissapear.classList.toggle('dissapear');
+    // zeg wanner je gehovert bent
+    console.log("mouseover");
+});
+
+// shake function
+// selecteer het element met id shake
+let shake = document.querySelector('#shake');
+// voeg een eventlistener toe op het element met id shake die een functie uitvoert wanneer er is geklikt
+shake.addEventListener('click', function (){
+   //  toggle de animatie class op het element met het id shake
+   shake.classList.toggle('shake')
+});
+
+
+
+
 
 
 
