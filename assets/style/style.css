@@ -269,3 +269,34 @@ a:nth-of-type(12) {
   }
 }
 
+/*rainbow*/
+.rainbow{
+  /*shorthand voor animatie naam, duration, en mode*/
+  animation: rainbow 4s ease-in-out;
+  /*animatie curve hierdoor verloopt hij smooth*/
+  animation-timing-function: linear;
+}
+
+@keyframes rainbow {
+
+  0%{
+    background-color: palevioletred;
+  }
+
+  25%{
+    background-color: red;
+  }
+
+  50%{
+    background-color: aqua;
+  }
+
+  75%{
+    background-color: greenyellow;
+  }
+
+  100%{
+    background-color: yellow;
+  }
+}
+

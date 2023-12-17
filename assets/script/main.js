@@ -122,6 +122,18 @@ spin.addEventListener('mouseover', function (){
     console.log('ik ben gehovert');
 });
 
+// rainbow function
+// selecteer het element met id rainbow
+let rainbow = document.querySelector('#rainbow');
+// voeg een eventlistener toe op het element met id rainbow die een functie uitvoert wanneer er is geklikt
+rainbow.addEventListener('click', function (){
+    //  toggle de animatie class op het element met het id rainbow
+    rainbow.classList.toggle('rainbow')
+    // laat in het console bericht zien wanneer er op het a element is geklikt
+    console.log('ik ben geklikt');
+});
+
+
 
 
 
