@@ -238,3 +238,34 @@ a:nth-of-type(12) {
 }
 
 
+/*spin*/
+.spin{
+  /*shorthand voor animatie naam, duration, en mode*/
+  animation: spin 0.5s ease-in-out;
+  /*animatie curve hierdoor verloopt hij smooth*/
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+
+  0%{
+    transform: rotate(0);
+  }
+
+  25%{
+    transform: rotate(90deg);
+  }
+
+  50%{
+    transform: rotate(180deg)
+  }
+
+  75%{
+    transform: rotate(270deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+

@@ -107,6 +107,19 @@ let shake = document.querySelector('#shake');
 shake.addEventListener('click', function (){
    //  toggle de animatie class op het element met het id shake
    shake.classList.toggle('shake')
+    // laat in het console bericht zien wanneer er op het a element is geklikt
+    console.log('ik ben geklikt');
+});
+
+// spin function
+// selecteer het element met id spin
+let spin = document.querySelector('#spin');
+// voeg een eventlistener toe op het element met id spin die een functie uitvoert wanneer er is geklikt
+spin.addEventListener('mouseover', function (){
+    //  toggle de animatie class op het element met het id spin
+    spin.classList.toggle('spin')
+    // laat in het console bericht zien wanneer er op het a element is gehoverd
+    console.log('ik ben gehovert');
 });
 
 
